@@ -43,3 +43,15 @@ Others ported but not used for this project.
 - The song will loop once if it has non-zero loop offset.
 - Added a SD Cards error handler, will be call when it can't get response from SD Card, code will be stuck in here until SD Card response.
 - It'll calculate how many VGM files at the beginning.
+
+### Glitches & Problems
+- *It have a unknown error in DC power jack circuit part, this error have burned me two voltage regulator and one YM2151. If you ordered PCB throught schematic doucment of this project, Please DON'T use the DC Jack for power supply, but the micro USB port on the board!*
+- *In a few cases when you unplug the SD card at runtime, the "SD Cards error handler" may not work, the program will be stuck here*
+- *Transcend SD Card needs to Reconnect the power before initialization, and I didn't design a circuit for SD card power control.*
+
+### Up Next & Optimizations
+- The timer callback functions isn't direct, pointer needs to jump twice(or more), which may have some performance impact, but so far, it has worked well.
+- 8-bit DataBus IO (the GpioFastParallel) is too slow, but even so, it still works well at high tempo song (e.g. Night of Nights). I'll deal with it when I find a better way for bind a lot of GPIOs to a parallel port.
+- Since SdFat has the `openNext()` function, `openPrev ()` may be possible.
+- The next VGMPlayer project may be base on YM2608.
+
