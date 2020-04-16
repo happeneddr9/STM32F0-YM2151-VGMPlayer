@@ -1,0 +1,1 @@
+replace Spi_lite to Spi_dma
