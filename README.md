@@ -5,8 +5,6 @@ This project is a VGMPlayer that uses a genuine YM2151 FM synthesizer chip. This
 
 This project is reference from [AidanHockey5/YM2151_VGM_STM32](https://github.com/AidanHockey5/YM2151_VGM_STM32), but this is not using BluePill(STM32F103), is STM32F0 serises; using SW4STM32 with standard peripheral library.
 
-![Pic](https://github.com/happeneddr9/STM32F0-YM2151-VGMPlayer/blob/master/Schematic/Pictures/PCB_Done2.JPG)
-
 Compared with BluePill, the STM32F0 series chip has a slower main clock, less Flash and RAM, and fewer peripherals, but that is more than enough for this project, and it is very cheap, each cost me around 0.83USD.
 
 Using STM32F030C8 as the brain of this project, ST77xx TFT LCD for displaying VGM information, and SdFat for SD cards and file system control, most of the libraries have been optimized for STM32F0 series.
@@ -17,6 +15,7 @@ STM32F030C8 has 64kB Flash and 8kB SRAM, this project usage:
   30192	    512	   3692	  34396	   865c
 ```
 it's very tiny, I guess.
+![Pic](https://github.com/happeneddr9/STM32F0-YM2151-VGMPlayer/blob/master/Schematic/Pictures/PCB_Done2.JPG)
 
 ### Requirements
 - Since some files used lambda or some "modern" features, it only work with c++11 or later.
