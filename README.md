@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/happeneddr9/happeneddr9/STM32F0-YM2151-VGMPlayer.svg)](http://hits.dwyl.com/happeneddr9/happeneddr9/STM32F0-YM2151-VGMPlayer)
+
 # STM32F0 YM2151 VGMPlayer
 
 ## Description
@@ -54,4 +56,3 @@ Others ported but not used for this project.
 - 8-bit DataBus IO (the GpioFastParallel) is too slow, but even so, it still works well at high tempo song (e.g. Night of Nights). I'll deal with it when I find a better way for bind a lot of GPIOs to a parallel port.
 - Since SdFat has the `openNext()` function, `openPrev ()` may be possible.
 - The next VGMPlayer project may be base on YM2608.
-
