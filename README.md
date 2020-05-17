@@ -16,7 +16,7 @@ STM32F030C8 has 64kB Flash and 8kB SRAM, this project usage:
    text	   data	    bss	    dec	    hex
   30192	    512	   3692	  34396	   865c
 ```
-it's very tiny, I guess.
+it's very tiny, I think.
 ![Pic](https://github.com/happeneddr9/STM32F0-YM2151-VGMPlayer/blob/master/Schematic/Pictures/PCB_Done2.JPG)
 
 ## Requirements
