@@ -3,7 +3,7 @@
 # STM32F0 YM2151 VGMPlayer
 
 ## Description
-This project is a VGMPlayer that uses a genuine YM2151 FM synthesizer chip. This project is driven by an STM32F030 microcontroller, it's better choice than BluePill in price, and I have not written any libraries for other STM serise chips.
+This project is a VGMPlayer that uses a genuine YM2151 FM synthesizer chip. This project is driven by a STM32F030 microcontroller, it's better choice than BluePill in price, and I have not written any libraries for other STM serise chips.
 
 This project is reference from [AidanHockey5/YM2151_VGM_STM32](https://github.com/AidanHockey5/YM2151_VGM_STM32), but this is not using BluePill(STM32F103), is STM32F0 serises; using SW4STM32 with standard peripheral library.
 
@@ -47,7 +47,7 @@ Others ported but not used for this project.
 - It'll calculate how many VGM files at the beginning.
 
 ## Glitches & Problems
-- *It have a unknown error in DC power jack circuit part, this error have burned me two voltage regulator and one YM2151. If you ordered PCB throught schematic doucment of this project, Please DON'T use the DC Jack for power supply, but the micro USB port on the board!*
+- *It have a unknown error in DC power jack circuit part, this error have burned my two voltage regulator and one YM2151. If you ordered PCB throught schematic doucment of this project, Please DON'T use the DC Jack for power supply, but the micro USB port on the board!*
 - *In a few cases when you unplug the SD card at runtime, the "SD Cards error handler" may not work, the program will be stuck here*
 - *Transcend SD Card needs to Reconnect the power before initialization, and I didn't design a circuit for SD card power control.*
 
